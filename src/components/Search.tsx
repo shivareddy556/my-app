@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { users as userData } from './constants';
 import '../App.css'
 import Button from '@mui/material/Button';
@@ -87,7 +87,7 @@ const Search = () => {
     );
 
 
-    React.useEffect(() => {
+    useEffect(() => {
         processData(userData);
     }, []);
 
