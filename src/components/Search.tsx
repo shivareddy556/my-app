@@ -112,6 +112,7 @@ const Search = () => {
                 <div className='flex-items'>
 
                     <div>
+                        <h1>Listed Item</h1>
                         {filteredUsers.map((user: User) => (
                             <div key={user.id} className="card">
                                 <p>UserId: {user.id}</p>
@@ -124,7 +125,14 @@ const Search = () => {
                         ))}
                     </div>
                     <div>
-
+                    <h1>Storage </h1>
+                  {  filteredRemoveUsers.length === 0 && 
+                    <div className='flex-items'>
+                    <div className="card App">
+                      <p> there is no data available in the Sore</p>
+                  </div>
+                </div>
+                  } 
                         {filteredRemoveUsers.map((user: User) => (
                             <div key={user.id} className="card">
                                 <p>UserId: {user.id}</p>
