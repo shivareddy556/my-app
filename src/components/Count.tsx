@@ -7,7 +7,7 @@ const initialState = {
   inputValue: ''
 };
 
-const reducer = (state: { count: number; inputValue: string; }, action: { type: any; payload: any; }) => {
+const reducer = (state: { count: number; inputValue: string; }, action: { type: string; payload: any; }) => {
   switch (action.type) {
     case 'INCREMENT':
       return { ...state, count: state.count + action.payload };
