@@ -4,7 +4,7 @@ export const users = [
       name: "siva",
       username: "siva ji",
       email: "Sincere@april.biz",
-      age: 18,
+      age: 20,
       address: {
         street: "Kulas Light",
         suite: "Apt. 556",
